@@ -9,7 +9,10 @@ function formulario() {
     var cell2 = row.insertRow(2);
     var cell3 = row.insertRow(3);
 
-    cell1.innerHTML = compra;
+    document.getElementById(" table").innerHTML = compra;
     cell2.innerHTML = precio;
     cell3.innerHTML = cantidad;
+
+    var subtotal = cantidad * precio
+    document.getElementById("subtotal").innerHTML = subtotal;
 }
