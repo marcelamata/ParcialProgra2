@@ -1,17 +1,18 @@
 function formulario() {
-    var table = document.getElementById(" table");
+
     var compra = document.getElementById("compra").value;
-    var precio = document.getElementById("precio").value;
     var cantidad = document.getElementById("cantidad").value;
+    var precio = document.getElementById("precio").value;
 
+    var table = document.getElementById(" table");
     var row = table.insertRow(0);
-    var cell1 = row.insertRow(1);
-    var cell2 = row.insertRow(2);
-    var cell3 = row.insertRow(3);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertRow(2);
+    cell1.innerHTML = compra;
+    cell2.innerHTML = cantidad;
+    cell3.innerHTML = precio;
 
-    document.getElementById(" table").innerHTML = compra;
-    cell2.innerHTML = precio;
-    cell3.innerHTML = cantidad;
 
     var subtotal = cantidad * precio
     document.getElementById("subtotal").innerHTML = subtotal;
