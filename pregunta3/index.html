@@ -11,27 +11,40 @@
 <body>
     <h1>Lista del supermercado</h1>
     <br>
-    <label for="presupuesto">Presupuesto </label>
-    <select name="presupuesto" id="presupuesto">
-        <option value="50">50</option>
-        <option value="100">100</option>
-        <option value="250">250</option>
-        <option value="500">500</option>
-    </select>
-    <br>
+    <div id="formulario">
+        <label for="presupuesto">Presupuesto </label>
+        <select name="presupuesto" id="presupuesto">
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="250">250</option>
+            <option value="500">500</option>
+        </select>
+        <br>
 
-    <label for="compra">Compra: </label><br>
-    <input type="text" id="compra" name="compra" placeholder="Compra">
-    <br>
-    <label for="cantidad">Cantidad: </label><br>
-    <input type="text" id="cantidad" name="cantidad" placeholder="Cantidad de producto">
-    <br>
-    <label for="precio">Precio: </label><br>
-    <input type="precio" id="precio" name="precio" placeholder="Precio del producto">
-    <br><br>
-    <input type="submit" value="Submit" onclick="formulario()"">
-
-
+        <label for="compra">Compra: </label><br>
+        <input type="text" id="compra" name="compra" placeholder="Compra">
+        <br>
+        <label for="cantidad">Cantidad: </label><br>
+        <input type="number" id="cantidad" name="cantidad" placeholder="Cantidad de producto">
+        <br>
+        <label for="precio">Precio: </label><br>
+        <input type="number" id="precio" name="precio" placeholder="Precio del producto">
+        <br><br>
+        <input type="submit" value="Submit" onclick="formulario()">
+        <br><br>
+    </div>
+    <table id=" table">
+        <thead>
+            <tr>
+                <th>compra</th>
+                <th>cantidad</th>
+                <th>precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="test"></tr>
+        </tbody>
+    </table>
     <script src=" /pregunta3/script.js"></script>
 </body>
 
